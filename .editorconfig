@@ -12,29 +12,20 @@ trim_trailing_whitespace = true
 [Dockerfile]
 indent_size = 4
 
-[{docker-compose.yml,package.json,.travis.yml,.pcit.yml,.drone.yml}]
-indent_size = 2
-indent_style = space
-
-# YAML
-[*.{yml,yaml}]
+[**.{md,yml,yml.dist,yaml,neon,neon.dist}]
 indent_style = space
 indent_size = 2
 
-[*.md]
+[**.{php,xml,yml,json,dist}]
+charset = utf-8
 trim_trailing_whitespace = true
+insert_final_newline = true
+
+[{docker-compose.yml,package.json,.travis.yml,.pcit.yml,.drone.yml}]
+indent_style = space
 indent_size = 2
 
-[*.py]
-indent_size = 4
-
-[*.php]
-indent_size = 4
-
-[*.{go,java}]
-indent_size = 4
-
-[*.xml]
+[*.{py,php,go,java,xml}]
 indent_size = 4
 
 [Makefile]
