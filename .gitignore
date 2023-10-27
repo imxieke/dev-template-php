@@ -1,29 +1,37 @@
-# CakePHP 3
+.idea
+*.DS_Store
+storage/*.key
+.env
+Homestead.yaml
+Homestead.json
+/.vagrant
 
-/vendor/*
-/config/app.php
+/logs
 
-/tmp/cache/models/*
-!/tmp/cache/models/empty
-/tmp/cache/persistent/*
-!/tmp/cache/persistent/empty
-/tmp/cache/views/*
-!/tmp/cache/views/empty
-/tmp/sessions/*
-!/tmp/sessions/empty
-/tmp/tests/*
-!/tmp/tests/empty
+# PHP
 
-/logs/*
-!/logs/empty
+/vendor
+# Build data
+/build/
 
-# CakePHP 2
+# Composer PHAR
+/composer.phar
 
 /app/tmp/*
 /app/Config/core.php
 /app/Config/database.php
 /vendors/*
-
 /composer.lock
+.phpunit.result.cache
+
+
+
+
+# Node
 /node_modules
-/package-lock.json
+npm-debug.log
+yarn-error.log
+
+
+# Email spool folder
+/app/spool/*

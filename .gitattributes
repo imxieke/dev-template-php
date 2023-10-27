@@ -5,6 +5,11 @@
 *.key binary
 *.bin binary
 
+*.blade.php diff=html
+*.css diff=css
+*.html diff=html
+*.md diff=markdown
+*.php diff=php
 
 # Do not put this files on a distribution package (by .gitignore)
 /vendor                     export-ignore
