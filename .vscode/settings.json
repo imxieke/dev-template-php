@@ -1,0 +1,51 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "GitHub Light",
+  "editor.fontSize": 16,
+  "files.autoSave": "onFocusChange",
+  "gitlens.advanced.fileHistoryFollowsRenames": true,
+  "gitlens.advanced.fileHistoryShowAllBranches": true,
+  "gitlens.blame.heatmap.location": "left",
+  "files.associations": {
+    "env-example": "dotenv",
+    "Dockerfile-*": "dockerfile",
+    "Dockerfile.*": "dockerfile",
+    "*.ign": "json",
+    "*.fcc": "yaml",
+    ".ini*": "ini",
+    "*.strings": "plist",
+    "*.alias": "shellscript",
+    "aliases": "shellscript",
+    ".aliases": "shellscript",
+    "*.aliases": "shellscript",
+    ".zsh*": "shellscript",
+    ".*rc": "shellscript",
+    "fastcgi_params": "nginx",
+    "*.install": "shellscript",
+    "*.tpl": "php"
+  },
+  "files.exclude": {
+    "**/.git": false
+  },
+  "files.watcherExclude": {
+    "**/vendor/**": true
+  },
+  "search.exclude": {
+    "**/vendor": true
+  },
+  "[shellscript]": {
+    "files.eol": "\n"
+  },
+  // "http.proxy": "http://127.0.0.1:7890",
+  "tabnine.experimentalAutoImports": true,
+  "json.maxItemsComputed": 200000,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.detectIndentation": false,
+  "editor.insertSpaces": false,
+  "editor.wordWrap": "on",
+  "editor.snippetSuggestions": "top",
+  "vsicons.dontShowNewVersionMessage": true,
+  "diffEditor.codeLens": true,
+}

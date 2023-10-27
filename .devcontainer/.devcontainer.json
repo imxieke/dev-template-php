@@ -1,0 +1,76 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/php-mariadb
+{
+  "name": "PHP & MariaDB",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
+  // For use with PHP or Apache (e.g.php -S localhost:8080 or apache2ctl start)
+  "forwardPorts": [
+    8080,
+    3306
+  ],
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "installDirectlyFromGitHubRelease": true,
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/go:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "nodeGypDependencies": true,
+      "version": "lts",
+      "nvmVersion": "latest"
+    },
+    "ghcr.io/devcontainers/features/rust:1": {
+      "version": "latest",
+      "profile": "complete"
+    },
+    "ghcr.io/devcontainers-contrib/features/actions-runner:1": {
+      "version": "latest",
+      "dotnetVersion": "latest"
+    },
+    "ghcr.io/devcontainers-contrib/features/etcd:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-contrib/features/exa:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-contrib/features/ffmpeg-apt-get:1": {},
+    "ghcr.io/devcontainers-contrib/features/fzf:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-contrib/features/npm-package:1": {
+      "package": "typescript",
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-contrib/features/ripgrep:1": {
+      "version": "latest"
+    },
+    "ghcr.io/jsburckhardt/devcontainer-features/gitleaks:1": {},
+    "ghcr.io/jayree/devcontainer-features/npm-registry:1": {
+      "registry": "@SCOPE:registry=https://npm.pkg.github.com\n//npm.pkg.github.com/:_authToken=${localEnv:GITHUB_TOKEN}"
+    },
+    "ghcr.io/itsmechlark/features/redis-server:1": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "DEVSENSE.composer-php-vscode",
+        "ms-vscode.sublime-keybindings",
+        "ms-vscode.anycode"
+      ]
+    }
+  }
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "sudo chmod a+x \"$(pwd)\" && sudo rm -rf /var/www/html && sudo ln -s \"$(pwd)\" /var/www/html"
+  // Configure tool-specific properties.
+  // "customizations": {},
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}
