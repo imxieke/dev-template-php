@@ -1,7 +1,7 @@
 {
-  "name": "imxieke/php-template",
+  "name": "imxieke/dev-template-php",
   "description": "PHP Project Template",
-  "type": "project",
+  "type": "library",
   "license": "MIT",
   "homepage": "https://github.com/imxieke/php-template",
   "keywords": [
@@ -18,25 +18,26 @@
     }
   ],
   "require": {
-    "php": ">=7.4.0"
+    "php": ">=8.1.8"
   },
   "require-dev": {
     "filp/whoops": "^2.14",
-    "mockery/mockery": "^1.4",
-    "phpunit/phpunit": "^9.0",
-    "monolog/monolog": "^2.3",
-    "phpstan/phpstan": "^1.3",
-    "symfony/var-dumper": "^5.4",
-    "vimeo/psalm": "^4.16"
+    "mockery/mockery": "^1.6",
+    "phpunit/phpunit": "^10.2.4",
+    "monolog/monolog": "^3.3.0",
+    "phpstan/phpstan": "^1.10.18",
+    "symfony/var-dumper": "^6.3.5",
+    "vimeo/psalm": "^5.10.0"
   },
   "scripts": {
     "test": "phpunit --colors",
     "psalm": "psalm --show-info=true --no-cache",
-    "psalm-fix": "psalm --no-cache --alter --issues=MissingReturnType,MissingParamType"
+    "psalm-fix": "psalm --no-cache --alter --issues=MissingReturnType,MissingParamType",
+	"phpstan": "vendor/bin/phpstan analyze src/ --memory-limit 512M --level 9"
   },
   "scripts-descriptions": {
     "test": "Run all tests."
-  }
+  },
   "config": {
     "preferred-install": "dist",
     "sort-packages": true,

@@ -1,6 +1,6 @@
 {
   "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "GitHub Light",
+  "workbench.colorTheme": "Solarized Light",
   "editor.fontSize": 16,
   "files.autoSave": "onFocusChange",
   "gitlens.advanced.fileHistoryFollowsRenames": true,
