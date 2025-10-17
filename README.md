@@ -3,15 +3,15 @@
 ## About XXX
 - What's this?
 
+## Installation
+- Install XXX with [Composer](https://getcomposer.org/)
+  - `composer require ext/xxxx`
+
 ## Features
 -
 
 ## Usage
 -
-
-## Installation
-- Install XXX with [Composer](https://getcomposer.org/)
-  - `composer require ext/xxxx`
 
 ## Documentation
 -
