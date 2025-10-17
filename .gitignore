@@ -21,7 +21,6 @@ Homestead.json
 /app/Config/core.php
 /app/Config/database.php
 /vendors/*
-/composer.lock
 .phpunit.result.cache
 
 # Node
