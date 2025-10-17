@@ -1,4 +1,4 @@
-<p style="text-align:center;font-size:46px;"> Dev Template</p>
+<p style="text-align:center;font-size:46px;"> PHP Dev Template</p>
 
 ## About XXX
 - What's this?
@@ -11,7 +11,7 @@
 
 ## Installation
 - Install XXX with [Composer](https://getcomposer.org/)
-  - `composer require imxieke/xxxx`
+  - `composer require ext/xxxx`
 
 ## Documentation
 -
