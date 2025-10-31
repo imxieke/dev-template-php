@@ -23,6 +23,8 @@ Homestead.json
 /vendors/*
 .phpunit.result.cache
 
+/composer.lock
+
 # Node
 /node_modules
 npm-debug.log
