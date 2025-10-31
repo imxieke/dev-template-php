@@ -1,9 +1,9 @@
 {
-  "name": "imxieke/dev-template-php",
+  "name": "ext/dev-template-php",
   "description": "PHP Project Template",
   "type": "library",
   "license": "MIT",
-  "homepage": "https://github.com/ext/ext",
+  "homepage": "https://github.com/php-exts/ext",
   "keywords": [
     "php",
     "project",
